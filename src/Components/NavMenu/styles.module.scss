@@ -1,0 +1,35 @@
+.container{
+    height: 93vh;
+    width: 100vw;
+    background-color: white;
+    position: absolute;
+    top: 70px;
+    animation-duration: 0.5s;
+    animation-name: slidein;
+    display: flex;
+    flex-direction: column;
+
+    ul{
+        margin-top: 20px;
+        padding: 20px;
+
+        li{
+            min-height: 50px;
+            padding: 7px;
+            cursor: pointer;
+            border-bottom: 1px solid gray;
+        }
+    }
+}
+
+
+@keyframes slidein {
+    from {
+        top: 30px;
+        opacity: 0;
+    }
+    to {
+        top: 70px;
+        opacity: 1;
+    }
+}
