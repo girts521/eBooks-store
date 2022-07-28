@@ -33,7 +33,7 @@ const Home: React.FC = () => {
         <div className={styles.courses}>
           <div className={styles.courseCard}>
             <div className={styles.courseImg}>
-              <img src="peak-performance.jpeg" alt="" />
+              <img src="./peak-performance.jpeg" alt="" />
             </div>
             <div className={styles.courseName}>
               Learn secrets of peak performance
@@ -49,7 +49,7 @@ const Home: React.FC = () => {
 
           <div className={styles.courseCard}>
             <div className={styles.courseImg}>
-              <img src="personal-development.jpeg" alt="" />
+              <img src="./personal-development.jpeg" alt="" />
             </div>
             <div className={styles.courseName}>
               Learn how to keep improving yourself
@@ -65,7 +65,7 @@ const Home: React.FC = () => {
 
           <div className={styles.courseCard}>
             <div className={styles.courseImg}>
-              <img src="public-speaking.jpeg" alt="" />
+              <img src="./public-speaking.jpeg" alt="" />
             </div>
             <div className={styles.courseName}>
               Learn how to master public speaking in 5 minutes
