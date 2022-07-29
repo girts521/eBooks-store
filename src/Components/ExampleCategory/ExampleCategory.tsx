@@ -1,59 +1,34 @@
 import React from "react";
-import styles from "./styles.module.scss"
+import ProductCard from "../ProductCard/ProductCard";
+import styles from "./styles.module.scss";
 
-const ExampleCategory:React.FC = () => {
-    return (
-        <div className={styles.exampleCategory}>
-        <h1>Personal Development products</h1>
+const ExampleCategory: React.FC = () => {
+  return (
+    <div className={styles.exampleCategory}>
+      <h1>Personal Development products</h1>
 
-        <div className={styles.productsContainer}>
-          <div className={styles.productCard}>
-            <div className={styles.productImg}>
-              <img
-                src="https://coach-life.highseastudio.com/wp-content/uploads/2021/01/2.jpg"
-                alt=""
-              />
-            </div>
-
-            <div className={styles.productDescription}>
-              <h2>The power of Dreams</h2>
-              <div>3$</div>
-            </div>
-          </div>
-
-          <div className={styles.productCard}>
-            <div className={styles.productImg}>
-              <img
-                src="https://coach-life.highseastudio.com/wp-content/uploads/2021/01/3.jpg"
-                alt=""
-              />
-            </div>
-
-            <div className={styles.productDescription}>
-              <h2>The power of Dreams</h2>
-              <div>3$</div>
-            </div>
-          </div>
-
-          <div className={styles.productCard}>
-            <div className={styles.productImg}>
-              <img
-                src="https://coach-life.highseastudio.com/wp-content/uploads/2021/01/4.jpg"
-                alt=""
-              />
-            </div>
-
-            <div className={styles.productDescription}>
-              <h2>The power of Dreams</h2>
-              <div>3$</div>
-            </div>
-          </div>
-        </div>
-        <div className={styles.shopAll}>
-          <p> SHOP ALL</p>
-        </div>
+      <div className={styles.productsContainer}>
+        <ProductCard
+          productPrice="3$"
+          productName="The power of Dreams"
+          img="https://coach-life.highseastudio.com/wp-content/uploads/2021/01/2.jpg"
+        />
+        <ProductCard
+          productPrice="3$"
+          productName="The power of Dreams"
+          img="https://coach-life.highseastudio.com/wp-content/uploads/2021/01/3.jpg"
+        />
+        <ProductCard
+          productPrice="3$"
+          productName="The power of Dreams"
+          img="https://coach-life.highseastudio.com/wp-content/uploads/2021/01/4.jpg"
+        />
       </div>
-    )
-}
+      <div className={styles.shopAll}>
+        <p> SHOP ALL</p>
+      </div>
+    </div>
+  );
+};
 
-export default ExampleCategory
+export default ExampleCategory;

@@ -10,25 +10,7 @@
     }
 
     .productsContainer {
-      .productCard {
-        box-shadow: 0px 5px 10px 3px rgba(0, 0, 0, 0.16);
-        width: 100%;
-        background-color: white;
-        margin-bottom: 25px;
-        .productImg {
-          img {
-            width: 100%;
-            height: auto;
-          }
-        }
-        .productDescription {
-          display: flex;
-          flex-direction: row;
-          justify-content: space-between;
-          padding: 20px;
-          border-top: 1px solid rgba(190, 188, 188, 0.359);
-        }
-      }
+
     }
     .shopAll {
       width: 100%;
@@ -49,9 +31,6 @@
       .productsContainer {
         display: flex;
         flex-direction: row;
-        .productCard {
-          margin-right: 15px;
-        }
         :last-child {
           margin-right: 0;
         }
