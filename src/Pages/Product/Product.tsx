@@ -1,6 +1,7 @@
 import React from "react";
 import ExampleCategory from "../../Components/ExampleCategory/ExampleCategory";
 import Footer from "../../Components/Footer/Footer";
+import Quantity from "../../Components/Quantity/Quantity";
 import styles from "./styles.module.scss";
 
 const Product: React.FC = () => {
@@ -55,12 +56,7 @@ const Product: React.FC = () => {
             <div className={styles.shortDescription}>This is a simple product.</div>
 
             <div className={styles.quantityContainer}>
-              <div className={styles.quantity}>
-                <div>+</div>
-                <div>1</div>
-                <div>-</div>
-              </div>
-
+              <Quantity />
               <div className={styles.addToCart}>ADD TO CART</div>
             </div>
 

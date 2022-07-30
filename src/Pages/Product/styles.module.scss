@@ -56,20 +56,6 @@
         display: flex;
         flex-direction: row;
         margin-bottom: 15px;
-
-        .quantity {
-          display: flex;
-          flex-direction: row;
-          margin-right: 15px;
-
-          div {
-            padding: 10px;
-            // border: 1px solid black;
-            margin-right: 5px;
-            font-size: 20px;
-            cursor: pointer;
-          }
-        }
         .addToCart {
           // border: 1px solid black;
           border-radius: 10px;
@@ -80,6 +66,7 @@
           padding: 15px 25px;
           background-color: rgba(255, 166, 0, 0.7);
           margin-bottom: 15px;
+          color: white;
         }
       }
 

@@ -1,0 +1,13 @@
+.quantity {
+    display: flex;
+    flex-direction: row;
+    margin-right: 15px;
+
+    div {
+      padding: 10px;
+      // border: 1px solid black;
+      margin-right: 5px;
+      font-size: 20px;
+      cursor: pointer;
+    }
+  }
