@@ -1,14 +1,46 @@
 import React from "react";
 import styles from "./styles.module.scss";
+import { useNavigate } from "react-router-dom";
 
-const NavMenu: React.FC = () => {
+const NavMenu: React.FC<{
+  func: React.Dispatch<React.SetStateAction<boolean>>;
+}> = ({ func }) => {
+  const navigate = useNavigate();
   return (
     <div className={styles.container}>
       <ul>
-        <li>Home</li>
-        <li>About Us</li>
-        <li>Theme 1</li>
-        <li>Theme 2</li>
+        <li
+          onClick={() => {
+            navigate("/");
+            func(false);
+          }}
+        >
+          Home
+        </li>
+        <li
+          onClick={() => {
+            navigate("/shop");
+            func(false);
+          }}
+        >
+          Shop
+        </li>
+        <li
+          onClick={() => {
+            navigate("/product");
+            func(false);
+          }}
+        >
+          Product
+        </li>
+        <li
+          onClick={() => {
+            navigate("/cart");
+            func(false);
+          }}
+        >
+          Cart
+        </li>
         <li>Theme 3</li>
         <li>Theme 4</li>
         <li>Theme 5</li>
